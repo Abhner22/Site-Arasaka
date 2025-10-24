@@ -98,115 +98,124 @@ body p {
 .o-que-e p {
     text-align: center;
     align-items: center;
-    width: 800px;
+    max-width: 1000px;
     width: 80%;
+    margin: 0 auto;
     word-spacing: 10px;
     font-size: 25px;
+    line-height: 1.6;
 }
 
 .o-que-e-imgs{
-    display: flex;
-    margin-left: 20%;
-    flex-direction: row;
-
-    margin-top: 70px;
-
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 60px auto;
+  max-width: 1200px;
 }
 
-.arasaka-porto {
-    display: flex;
-    flex-direction: column-reverse;
-}
 
+.arasaka-porto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .arasaka-porto img {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    
-    width: 700px;
-    height: 500px;
-    
-    border-radius: 20px;
-}
+  width: 700px;
+  height: 435px;
+  border-radius: 12px;
+  display: block;
 
-.arasaka-porto p{
-    display: flex;
-    position: absolute;
-    
-    padding: 15px;
-
-    color: var(--cor-zero);
-    opacity: 0.5;
-
-    z-index: 1;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.arasaka-permormance {
-     display: flex;
-    flex-direction: column;
-}
-
-.arasaka-permormance img {
-     display: flex;
-    align-items: start;
-    justify-content: start;
-
-    width: 450px;
-    height: 250px;
-    
-    border-radius: 20px;
-}
-
-.arasaka-permormance p{
-    display: flex;
-    position: absolute;
-    
-    padding: 15px;
-
-    color: var(--cor-zero);
-   opacity: 0.5;
-
-    z-index: 1;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.arasaka-soldiers {
-    display: flex;
-    flex-direction: column;
-}
-
-.arasaka-soldiers img{
-      display: flex;
-    align-items: start;
-    justify-content: start;
-
-    width: 450px;
-    height: 250px;
-    
-    border-radius: 20px;
-}
-
-.arasaka-soldiers p{
-     display: flex;
-    position: absolute;
-    
-    padding: 15px;
-
-    color: var(--cor-zero);
-    opacity: 0.5;
-
-    z-index: 1;
-    font-size: 20px;
-    font-weight: bold;
+  border-color: var(--cor-quartenaria);
+    border-style:groove
 }
 
 .performance-soldier {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+.arasaka-permormance img,
+.arasaka-soldiers img {
+  width: 320px;
+  height: 200px;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+
+   border-color: var(--cor-quartenaria);
+    border-style:groove
+}
+.arasaka-porto,
+.arasaka-permormance,
+.arasaka-soldiers {
+  position: relative;
+}
+
+
+
+.arasaka-porto p,
+.arasaka-permormance p,
+.arasaka-soldiers p {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.35);
+  color: var(--cor-zero);
+  font-weight: 700;
+  border-radius: 6px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .o-que-e-imgs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .arasaka-porto img {
+    width: 90%;
+    height: auto;
+  }
+
+  .performance-soldier {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .arasaka-permormance img,
+  .arasaka-soldiers img {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .performance-soldier {
+    flex-direction: column;
+  }
+
+  .arasaka-permormance img,
+  .arasaka-soldiers img {
+    width: 80%;
+  }
+}
+
+.divisions-titulo h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 40px;
 }
