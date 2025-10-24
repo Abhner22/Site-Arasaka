@@ -104,8 +104,109 @@ body p {
     font-size: 25px;
 }
 
-.o-que-e img {
-    display: block;
-    width: 670px;
-    height: 400px;
+.o-que-e-imgs{
+    display: flex;
+    margin-left: 20%;
+    flex-direction: row;
+
+    margin-top: 70px;
+
+    gap: 30px;
+}
+
+.arasaka-porto {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.arasaka-porto img {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    
+    width: 700px;
+    height: 500px;
+    
+    border-radius: 20px;
+}
+
+.arasaka-porto p{
+    display: flex;
+    position: absolute;
+    
+    padding: 15px;
+
+    color: var(--cor-zero);
+    opacity: 0.5;
+
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arasaka-permormance {
+     display: flex;
+    flex-direction: column;
+}
+
+.arasaka-permormance img {
+     display: flex;
+    align-items: start;
+    justify-content: start;
+
+    width: 450px;
+    height: 250px;
+    
+    border-radius: 20px;
+}
+
+.arasaka-permormance p{
+    display: flex;
+    position: absolute;
+    
+    padding: 15px;
+
+    color: var(--cor-zero);
+   opacity: 0.5;
+
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arasaka-soldiers {
+    display: flex;
+    flex-direction: column;
+}
+
+.arasaka-soldiers img{
+      display: flex;
+    align-items: start;
+    justify-content: start;
+
+    width: 450px;
+    height: 250px;
+    
+    border-radius: 20px;
+}
+
+.arasaka-soldiers p{
+     display: flex;
+    position: absolute;
+    
+    padding: 15px;
+
+    color: var(--cor-zero);
+    opacity: 0.5;
+
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.performance-soldier {
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
 }
