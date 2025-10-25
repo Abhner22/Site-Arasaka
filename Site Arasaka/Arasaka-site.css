@@ -37,6 +37,9 @@ body h2 {
 body p {
     color: var(--cor-zero);
 }
+body h3 {
+  color: var(--cor-quartenaria);
+}
 
 @keyframes brilhar {
     0% {
@@ -212,10 +215,41 @@ body p {
   }
 }
 
+.serviços {
+  grid-template-columns: "security", "bank", "industries" ;
+}
+
 .divisions-titulo h2{
     display: flex;
     flex-direction: column;
     text-align: center;
 
     font-size: 40px;
+}
+
+.arasaka-security {
+  grid-area: "security";
+
+}
+
+.arasaka-bank {
+  grid-area: "bank";
+}
+
+.arasaka-industries {
+  grid-area: "industries";
+}
+
+.arasaka-security-texto,
+.arasaka-bank-texto,
+.arasaka-industries-texto{
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  justify-content: start;
+
+  gap: 30px;
+
 }
